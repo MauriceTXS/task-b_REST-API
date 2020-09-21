@@ -1,0 +1,21 @@
+{
+  "name": "reviewhub",
+  "version": "1.0.0",
+  "description": "CS3219 Task B Implementation of a simple Javascript backend and REST API to GET, POST, PUT, DELETE",
+  "main": "index.js",
+  "scripts": {
+    "start": "SET NODE_ENV=dev && nodemon index.js"
+  },
+  "keywords": [
+    "api",
+    "restful",
+    "json"
+  ],
+  "author": "Tan Xiang Sheng, Maurice",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.10.6"
+  }
+}
