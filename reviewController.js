@@ -64,13 +64,13 @@ exports.update = function (req, res) {
 };
 // Handle delete review
 exports.delete = function (req, res) {
-    Review.remove({
+    Review.deleteOne({
         _id: req.params.review_id
     }, function (err, review) {
         if (err)
             res.send(err);
         res.json({
-            status: "Successfully deleted",
+            status: "success",
             message: 'Review deleted'
         });
     });
