@@ -1,6 +1,6 @@
-# TaskB REST-API
+# TaskB REST-API [![Build Status](https://travis-ci.org/MauriceTXS/task-b_REST-API.svg?branch=master)](https://travis-ci.org/MauriceTXS/task-b_REST-API)
 
-Implementation of a simple Javascript backend and REST API to GET, POST, PUT, DELETE.
+Implementation of a simple Javascript backend and REST API to GET, POST, PUT, DELETE. Which also includes testing of implementation with Moacha and Chai.
 
 ## Instructions
 
