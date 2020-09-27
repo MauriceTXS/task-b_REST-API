@@ -17,12 +17,12 @@ Local instance of MongoDB
 2. `npm test`
 
 ## Local links
-#### Base http://localhost:8080
-#### API http://localhost:8080/api/reviews
+### Base http://localhost:8080
+### API http://localhost:8080/api/reviews
 
 ## Deployed links
-#### Domain https://vr33s0smmb.execute-api.ap-southeast-1.amazonaws.com/dev
-#### API https://vr33s0smmb.execute-api.ap-southeast-1.amazonaws.com/dev/api/reviews
+### Domain https://vr33s0smmb.execute-api.ap-southeast-1.amazonaws.com/dev
+### API https://vr33s0smmb.execute-api.ap-southeast-1.amazonaws.com/dev/api/reviews
 
 # Credits
 This repository is based off the guide provided by [David Inyang-Etoh
