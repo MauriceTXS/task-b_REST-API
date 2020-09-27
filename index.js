@@ -3,9 +3,12 @@ let express = require('express');
 let bodyParser = require('body-parser');
 // Import Mongoose
 let mongoose = require('mongoose');
+// Import Config
 let config = require('config');
 // Initialise the app
 let app = express();
+// Import Serverless
+let sls = require('serverless-http')
 
 // Import routes
 let apiRoutes = require("./api-routes");
@@ -15,8 +18,8 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(bodyParser.json());
 // Connect to Mongoose and set connection variable
-mongoose.connect(config.dbConfig, { useNewUrlParser: true, useUnifiedTopology: true });
-var db = mongoose.connection;
+var db = config.dbConfig || "mongodb+srv://reviewhubDBAdmin:FUmU1YGljqDLnA7B@reviewhub.2woiq.mongodb.net/reviewhub?retryWrites=true&w=majority"
+mongoose.connect(db, { useNewUrlParser: true, useUnifiedTopology: true });
 
 // Added check for DB connection
 if(!db)
@@ -39,3 +42,4 @@ app.listen(port, function () {
 
 // Export my app for testing purposes
 module.exports = app;
+module.exports.server = sls(app)

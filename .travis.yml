@@ -4,6 +4,12 @@ node_js:
 services:
   - "mongodb"
 install:
+  - "npm install -g serverless"
   - "npm install"
 script:
   - "npm test"
+deploy:
+  provider: "script"
+  script: "sls deploy"
+  on:
+    branch: "master"
